@@ -61,7 +61,7 @@ android {
 - When successfully connected to the chatroom, you will be able to receive messages from the chatroom through onReceiveMessage.
 
 ```kotlin
-   private val messageListener = object : MessageListener {
+private val messageListener = object : MessageListener {
   override fun onReceiveMessage(messages: List<MessageInfo>) {
     // Handle messages.
 
@@ -84,48 +84,48 @@ android {
 ```kotlin
    private val eventListener = object : EventListener {
 
-  // ConnectionState.CONNECTING - Connecting
-  // ConnectionState.CONNECTED - Connected successfully
-  // ConnectionState.DISCONNECTING - Disconnecting
-  // ConnectionState.DISCONNECTED - Disconnected successfully
-  override fun onChatRoomConnectionChanged(connectionState: ConnectionState) {
-    //When the connectionState is ConnectionState.CONNECTED, you can retrieve the chatroomInfo from the connectionState.
-  }
+       // ConnectionState.CONNECTING - Connecting
+       // ConnectionState.CONNECTED - Connected successfully
+       // ConnectionState.DISCONNECTING - Disconnecting
+       // ConnectionState.DISCONNECTED - Disconnected successfully
+       override fun onChatRoomConnectionChanged(connectionState: ConnectionState) {
+           //When the connectionState is ConnectionState.CONNECTED, you can retrieve the chatroomInfo from the connectionState.
+       }
 
-  //This method is optional and can be overridden if needed.
-  override fun onMuteChatRoomSuccess() {}
+       //This method is optional and can be overridden if needed.
+       override fun onMuteChatRoomSuccess() {}
 
-  //This method is optional and can be overridden if needed.
-  override fun onUnmuteChatRoomSuccess() {}
+       //This method is optional and can be overridden if needed.
+       override fun onUnmuteChatRoomSuccess() {}
 
-  //This method is optional and can be overridden if needed.
-  override fun onBlockChatRoomUserSuccess(userId: String) {}
+       //This method is optional and can be overridden if needed.
+       override fun onBlockChatRoomUserSuccess(userId: String) {}
 
-  //This method is optional and can be overridden if needed.
-  override fun onUnblockChatRoomUserSuccess(userId: String) {}
+       //This method is optional and can be overridden if needed.
+       override fun onUnblockChatRoomUserSuccess(userId: String) {}
 
-  //This method is optional and can be overridden if needed.
-  override fun onGetChatHistorySuccess(messages: List<MessageInfo>) {}
+       //This method is optional and can be overridden if needed.
+       override fun onGetChatHistorySuccess(messages: List<MessageInfo>) {}
 
-  //This method is optional and can be overridden if needed.
-  override fun onDeleteMessageSuccess(messageId: String) {}
+       //This method is optional and can be overridden if needed.
+       override fun onDeleteMessageSuccess(messageId: String) {}
 
-  //This method is optional and can be overridden if needed.
-  override fun onPinMessageSuccess() {}
+       //This method is optional and can be overridden if needed.
+       override fun onPinMessageSuccess() {}
 
-  //This method is optional and can be overridden if needed.
-  override fun onUnpinMessageSuccess() {}
+       //This method is optional and can be overridden if needed.
+       override fun onUnpinMessageSuccess() {}
 
-  //This method is optional and can be overridden if needed.
-  override fun onUpdateViewerInfoSuccess() {}
+       //This method is optional and can be overridden if needed.
+       override fun onUpdateViewerInfoSuccess() {}
 
-  //This method is optional and can be overridden if needed.
-  override fun onUpdateUserSuccess() {}
+       //This method is optional and can be overridden if needed.
+       override fun onUpdateUserSuccess() {}
 
-  override fun onError(exception: MessageException) {
-    // Error exception
-  }
-}
+       override fun onError(exception: MessageException) {
+           // Error exception
+       }
+   }
 ```
 
 ### 3. Create `BVMessageManager`
@@ -146,13 +146,14 @@ android {
 - Optional: The `UserName` parameter is optional.
 
 ```kotlin
- //Example usage:
-//Guest
-messageManager.connect(chatRoomId = chatRoomId, chatRoomRole = ChatRoomRole.ROLE_VIEWER,userName = null)
-//Setting UserName
-messageManager.connect(chatRoomId = chatRoomId, chatRoomRole = ChatRoomRole.ROLE_VIEWER,userName = "Anthony")
+
+//Example usage:
+//Viewer
+val chatRoomUser = ChatRoomUser(userName = "Anthony", deviceId = UUID.randomUUID().toString(), role = ChatRoomRole.ROLE_VIEWER)
+messageManager.connect(chatRoomId = chatRoomId, chatRoomUser = chatRoomUser)
 //Admin
-messageManager.connect(chatRoomId = chatRoomId, chatRoomRole = ChatRoomRole.ROLE_ADMIN,userName = "Isaac")
+val chatRoomUser = ChatRoomUser(userName = "Isaac", deviceId = UUID.randomUUID().toString(), role = ChatRoomRole.ROLE_ADMIN)
+messageManager.connect(chatRoomId = chatRoomId, chatRoomUser = chatRoomUser)
 ```
 
 ### 5. Publish message to ChatRoom
