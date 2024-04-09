@@ -61,7 +61,7 @@ android {
 - When successfully connected to the chatroom, you will be able to receive messages from the chatroom through onReceiveMessage.
 
 ```kotlin
-private val messageListener = object : MessageListener {
+   private val messageListener = object : MessageListener {
   override fun onReceiveMessage(messages: List<MessageInfo>) {
     // Handle messages.
 
@@ -143,7 +143,6 @@ private val messageListener = object : MessageListener {
 
 - The role types are: `ChatRoomRole.ROLE_UNSPECIFIED`, `ChatRoomRole.ROLE_VIEWER`, and `ChatRoomRole.ROLE_ADMIN`.
 - Upon successful connection, the status callback for `ConnectionState.CONNECTED` will be received in the `onChatRoomConnectionChanged` method.
-- Optional: The `UserName` parameter is optional.
 
 ```kotlin
 
