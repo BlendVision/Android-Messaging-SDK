@@ -133,7 +133,7 @@ private val eventListener = object : EventListener {
 - The `apiToken` and `bvOrgId` can be obtained from the BlendVision console.
 
 ```kotlin
-val messageManager = BVMessageManager.Builder(apiToken, orgId)
+  val messageManager = BVMessageManager.Builder(apiToken, orgId)
   .setEventListener(eventListener)
   .setMessageListener(messageListener)
   .build()
@@ -150,9 +150,11 @@ val messageManager = BVMessageManager.Builder(apiToken, orgId)
 //Viewer
 val chatRoomUser = ChatRoomUser(userName = "Anthony", deviceId = UUID.randomUUID().toString(), role = ChatRoomRole.ROLE_VIEWER)
 messageManager.connect(chatRoomId = chatRoomId, chatRoomUser = chatRoomUser)
+
 //Admin
 val chatRoomUser = ChatRoomUser(userName = "Isaac", deviceId = UUID.randomUUID().toString(), role = ChatRoomRole.ROLE_ADMIN)
 messageManager.connect(chatRoomId = chatRoomId, chatRoomUser = chatRoomUser)
+
 ```
 
 ### 5. Publish message to ChatRoom
