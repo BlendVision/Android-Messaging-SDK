@@ -143,16 +143,17 @@ private val eventListener = object : EventListener {
 
 - The role types are: `ChatRoomRole.ROLE_UNSPECIFIED`, `ChatRoomRole.ROLE_VIEWER`, and `ChatRoomRole.ROLE_ADMIN`.
 - Upon successful connection, the status callback for `ConnectionState.CONNECTED` will be received in the `onChatRoomConnectionChanged` method.
+- If the `expiredAt` value is null, it will default to 24 hours.
 
 ```kotlin
 
 //Example usage:
 //Viewer
-val chatRoomUser = ChatRoomUser(userName = "Anthony", deviceId = UUID.randomUUID().toString(), role = ChatRoomRole.ROLE_VIEWER)
+val chatRoomUser = ChatRoomUser(userName = "Anthony", deviceId = UUID.randomUUID().toString(), role = ChatRoomRole.ROLE_VIEWER, expiredAt = null)
 messageManager.connect(chatRoomId = chatRoomId, chatRoomUser = chatRoomUser)
 
 //Admin
-val chatRoomUser = ChatRoomUser(userName = "Isaac", deviceId = UUID.randomUUID().toString(), role = ChatRoomRole.ROLE_ADMIN)
+val chatRoomUser = ChatRoomUser(userName = "Isaac", deviceId = UUID.randomUUID().toString(), role = ChatRoomRole.ROLE_ADMIN, expiredAt = 1712592000)
 messageManager.connect(chatRoomId = chatRoomId, chatRoomUser = chatRoomUser)
 
 ```
