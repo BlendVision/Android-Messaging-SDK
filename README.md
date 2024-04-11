@@ -93,6 +93,9 @@ private val eventListener = object : EventListener {
   }
 
   //This method is optional and can be overridden if needed.
+  override fun onRefreshTokenSuccess() {}
+
+  //This method is optional and can be overridden if needed.
   override fun onMuteChatRoomSuccess() {}
 
   //This method is optional and can be overridden if needed.
