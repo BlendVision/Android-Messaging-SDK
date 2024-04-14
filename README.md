@@ -10,8 +10,8 @@
 
 ## Integration
 
-### In your settings.gradle file, `dependencyResolutionManagement` sections:
-
+### In your settings.gradle file, `dependencyResolutionManagement` sections: 
+[Gets username and password](https://github.com/BlendVision/Android-Messaging-SDK/wiki/Android%E2%80%90Messaging%E2%80%90SDK-pull-credentials)
 ```groovy
 dependencyResolutionManagement {
   repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
@@ -22,8 +22,8 @@ dependencyResolutionManagement {
     maven {
       url = uri("https://maven.pkg.github.com/blendvision/Android-Messaing-SDK")
       credentials {
-        username = "bv-github-access"
-        password = "ghp_GiNfne8EixUKMJf@yeUy5otI6oGTtVc3hyoXQ" // Please remove "@" char
+        username = //TODO
+        password = //TODO
       }
     }
 
