@@ -1,0 +1,378 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>BVMessageManager</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../../index.html">
+                            BlendVisionMessageSDK
+                    </a>            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":messaging:message:dokkaHtmlPartial/stage">androidJvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="message::com.blendvision.chat.messaging.message.presentation/BVMessageManager///PointingToDeclaration//1591890667">
+  <div class="breadcrumbs"><a href="../../index.html">message</a><span class="delimiter">/</span><a href="../index.html">com.blendvision.chat.messaging.message.presentation</a><span class="delimiter">/</span><span class="current">BVMessageManager</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>BVMessage</span><wbr><span><span>Manager</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":messaging:message:dokkaHtmlPartial/stage"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">BVMessageManager</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">apiToken<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token punctuation">, </span></span><span class="parameter ">chatRoomManager<span class="token operator">: </span><span data-unresolved-link="com.blendvision.chat.messaging.chatroom.presentation.manager/ChatRoomManager///PointingToDeclaration/">ChatRoomManager</span><span class="token punctuation">, </span></span><span class="parameter ">mqttManager<span class="token operator">: </span><span data-unresolved-link="com.blendvision.chat.messaging.mqtt.presentation.manager/MqttManager///PointingToDeclaration/">MqttManager</span><span class="token punctuation">, </span></span><span class="parameter ">eventListener<span class="token operator">: </span><a href="../../com.blendvision.chat.messaging.message.presentation.callback/-event-listener/index.html">EventListener</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">messageListener<span class="token operator">: </span><a href="../../com.blendvision.chat.messaging.message.presentation.callback/-message-listener/index.html">MessageListener</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span> : <a href="../-message-manager/index.html">MessageManager</a></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="1161985861%2FConstructors%2F1591890667" anchor-label="BVMessageManager" id="1161985861%2FConstructors%2F1591890667" data-filterable-set=":messaging:message:dokkaHtmlPartial/stage"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":messaging:message:dokkaHtmlPartial/stage" data-filterable-set=":messaging:message:dokkaHtmlPartial/stage">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-b-v-message-manager.html"><span>BVMessage</span><wbr><span><span>Manager</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1161985861%2FConstructors%2F1591890667"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":messaging:message:dokkaHtmlPartial/stage"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">apiToken<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token punctuation">, </span></span><span class="parameter ">chatRoomManager<span class="token operator">: </span><span data-unresolved-link="com.blendvision.chat.messaging.chatroom.presentation.manager/ChatRoomManager///PointingToDeclaration/">ChatRoomManager</span><span class="token punctuation">, </span></span><span class="parameter ">mqttManager<span class="token operator">: </span><span data-unresolved-link="com.blendvision.chat.messaging.mqtt.presentation.manager/MqttManager///PointingToDeclaration/">MqttManager</span><span class="token punctuation">, </span></span><span class="parameter ">eventListener<span class="token operator">: </span><a href="../../com.blendvision.chat.messaging.message.presentation.callback/-event-listener/index.html">EventListener</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">messageListener<span class="token operator">: </span><a href="../../com.blendvision.chat.messaging.message.presentation.callback/-message-listener/index.html">MessageListener</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="2008748698%2FClasslikes%2F1591890667" anchor-label="Builder" id="2008748698%2FClasslikes%2F1591890667" data-filterable-set=":messaging:message:dokkaHtmlPartial/stage"></a>
+          <div class="table-row" data-filterable-current=":messaging:message:dokkaHtmlPartial/stage" data-filterable-set=":messaging:message:dokkaHtmlPartial/stage">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-builder/index.html"><span><span>Builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2008748698%2FClasslikes%2F1591890667"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":messaging:message:dokkaHtmlPartial/stage"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-builder/index.html">Builder</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">apiToken<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token punctuation">, </span></span><span class="parameter ">bvOrgId<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1528113335%2FClasslikes%2F1591890667" anchor-label="Companion" id="-1528113335%2FClasslikes%2F1591890667" data-filterable-set=":messaging:message:dokkaHtmlPartial/stage"></a>
+          <div class="table-row" data-filterable-current=":messaging:message:dokkaHtmlPartial/stage" data-filterable-set=":messaging:message:dokkaHtmlPartial/stage">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-companion/index.html"><span><span>Companion</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1528113335%2FClasslikes%2F1591890667"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":messaging:message:dokkaHtmlPartial/stage"><div class="symbol monospace"><span class="token keyword">object </span><a href="-companion/index.html">Companion</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="1380174916%2FFunctions%2F1591890667" anchor-label="blockUser" id="1380174916%2FFunctions%2F1591890667" data-filterable-set=":messaging:message:dokkaHtmlPartial/stage"></a>
+          <div class="table-row" data-filterable-current=":messaging:message:dokkaHtmlPartial/stage" data-filterable-set=":messaging:message:dokkaHtmlPartial/stage">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="block-user.html"><span>block</span><wbr><span><span>User</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1380174916%2FFunctions%2F1591890667"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":messaging:message:dokkaHtmlPartial/stage"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="block-user.html"><span class="token function">blockUser</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">userId<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token punctuation">, </span></span><span class="parameter ">userDeviceId<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token punctuation">, </span></span><span class="parameter ">userCustomName<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Blocks a user in the chat room.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-98057694%2FFunctions%2F1591890667" anchor-label="connect" id="-98057694%2FFunctions%2F1591890667" data-filterable-set=":messaging:message:dokkaHtmlPartial/stage"></a>
+          <div class="table-row" data-filterable-current=":messaging:message:dokkaHtmlPartial/stage" data-filterable-set=":messaging:message:dokkaHtmlPartial/stage">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="connect.html"><span><span>connect</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-98057694%2FFunctions%2F1591890667"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":messaging:message:dokkaHtmlPartial/stage"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="connect.html"><span class="token function">connect</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">chatRoomId<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token punctuation">, </span></span><span class="parameter ">chatRoomUser<span class="token operator">: </span><a href="../../../common/com.blendvision.chat.messaging.common.presentation/-chat-room-user/index.html">ChatRoomUser</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Connects to a chat room.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="322019230%2FFunctions%2F1591890667" anchor-label="deleteMessage" id="322019230%2FFunctions%2F1591890667" data-filterable-set=":messaging:message:dokkaHtmlPartial/stage"></a>
+          <div class="table-row" data-filterable-current=":messaging:message:dokkaHtmlPartial/stage" data-filterable-set=":messaging:message:dokkaHtmlPartial/stage">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="delete-message.html"><span>delete</span><wbr><span><span>Message</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="322019230%2FFunctions%2F1591890667"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":messaging:message:dokkaHtmlPartial/stage"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="delete-message.html"><span class="token function">deleteMessage</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">messageId<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Deletes a message from the chat room.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1978541828%2FFunctions%2F1591890667" anchor-label="disconnect" id="-1978541828%2FFunctions%2F1591890667" data-filterable-set=":messaging:message:dokkaHtmlPartial/stage"></a>
+          <div class="table-row" data-filterable-current=":messaging:message:dokkaHtmlPartial/stage" data-filterable-set=":messaging:message:dokkaHtmlPartial/stage">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="disconnect.html"><span><span>disconnect</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1978541828%2FFunctions%2F1591890667"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":messaging:message:dokkaHtmlPartial/stage"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="disconnect.html"><span class="token function">disconnect</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Disconnects from the chat room.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="629121611%2FFunctions%2F1591890667" anchor-label="getChatHistory" id="629121611%2FFunctions%2F1591890667" data-filterable-set=":messaging:message:dokkaHtmlPartial/stage"></a>
+          <div class="table-row" data-filterable-current=":messaging:message:dokkaHtmlPartial/stage" data-filterable-set=":messaging:message:dokkaHtmlPartial/stage">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-chat-history.html"><span>get</span><wbr><span>Chat</span><wbr><span><span>History</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="629121611%2FFunctions%2F1591890667"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":messaging:message:dokkaHtmlPartial/stage"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="get-chat-history.html"><span class="token function">getChatHistory</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">beforeAt<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token punctuation">, </span></span><span class="parameter ">limit<span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Retrieves chat history from the chat room.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1028633780%2FFunctions%2F1591890667" anchor-label="muteChatRoom" id="-1028633780%2FFunctions%2F1591890667" data-filterable-set=":messaging:message:dokkaHtmlPartial/stage"></a>
+          <div class="table-row" data-filterable-current=":messaging:message:dokkaHtmlPartial/stage" data-filterable-set=":messaging:message:dokkaHtmlPartial/stage">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="mute-chat-room.html"><span>mute</span><wbr><span>Chat</span><wbr><span><span>Room</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1028633780%2FFunctions%2F1591890667"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":messaging:message:dokkaHtmlPartial/stage"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="mute-chat-room.html"><span class="token function">muteChatRoom</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Mutes the chat room.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1689546190%2FFunctions%2F1591890667" anchor-label="pinMessage" id="-1689546190%2FFunctions%2F1591890667" data-filterable-set=":messaging:message:dokkaHtmlPartial/stage"></a>
+          <div class="table-row" data-filterable-current=":messaging:message:dokkaHtmlPartial/stage" data-filterable-set=":messaging:message:dokkaHtmlPartial/stage">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pin-message.html"><span>pin</span><wbr><span><span>Message</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1689546190%2FFunctions%2F1591890667"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":messaging:message:dokkaHtmlPartial/stage"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="pin-message.html"><span class="token function">pinMessage</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">messageId<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token punctuation">, </span></span><span class="parameter ">text<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token punctuation">, </span></span><span class="parameter ">userId<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token punctuation">, </span></span><span class="parameter ">userDeviceId<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token punctuation">, </span></span><span class="parameter ">userCustomName<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Pins a message in the chat room.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-112710413%2FFunctions%2F1591890667" anchor-label="publishCustomMessage" id="-112710413%2FFunctions%2F1591890667" data-filterable-set=":messaging:message:dokkaHtmlPartial/stage"></a>
+          <div class="table-row" data-filterable-current=":messaging:message:dokkaHtmlPartial/stage" data-filterable-set=":messaging:message:dokkaHtmlPartial/stage">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="publish-custom-message.html"><span>publish</span><wbr><span>Custom</span><wbr><span><span>Message</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-112710413%2FFunctions%2F1591890667"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":messaging:message:dokkaHtmlPartial/stage"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="publish-custom-message.html"><span class="token function">publishCustomMessage</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">customMessage<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Publishes a custom message to the chat room.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1196513948%2FFunctions%2F1591890667" anchor-label="publishMessage" id="-1196513948%2FFunctions%2F1591890667" data-filterable-set=":messaging:message:dokkaHtmlPartial/stage"></a>
+          <div class="table-row" data-filterable-current=":messaging:message:dokkaHtmlPartial/stage" data-filterable-set=":messaging:message:dokkaHtmlPartial/stage">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="publish-message.html"><span>publish</span><wbr><span><span>Message</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1196513948%2FFunctions%2F1591890667"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":messaging:message:dokkaHtmlPartial/stage"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="publish-message.html"><span class="token function">publishMessage</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">message<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Publishes a message to the chat room.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="415206714%2FFunctions%2F1591890667" anchor-label="refreshToken" id="415206714%2FFunctions%2F1591890667" data-filterable-set=":messaging:message:dokkaHtmlPartial/stage"></a>
+          <div class="table-row" data-filterable-current=":messaging:message:dokkaHtmlPartial/stage" data-filterable-set=":messaging:message:dokkaHtmlPartial/stage">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="refresh-token.html"><span>refresh</span><wbr><span><span>Token</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="415206714%2FFunctions%2F1591890667"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":messaging:message:dokkaHtmlPartial/stage"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="refresh-token.html"><span class="token function">refreshToken</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Refreshes the chat room token.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2026434843%2FFunctions%2F1591890667" anchor-label="release" id="2026434843%2FFunctions%2F1591890667" data-filterable-set=":messaging:message:dokkaHtmlPartial/stage"></a>
+          <div class="table-row" data-filterable-current=":messaging:message:dokkaHtmlPartial/stage" data-filterable-set=":messaging:message:dokkaHtmlPartial/stage">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="release.html"><span><span>release</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2026434843%2FFunctions%2F1591890667"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":messaging:message:dokkaHtmlPartial/stage"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="release.html"><span class="token function">release</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Releases resources and cancels ongoing operations.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1679499201%2FFunctions%2F1591890667" anchor-label="unblockUser" id="1679499201%2FFunctions%2F1591890667" data-filterable-set=":messaging:message:dokkaHtmlPartial/stage"></a>
+          <div class="table-row" data-filterable-current=":messaging:message:dokkaHtmlPartial/stage" data-filterable-set=":messaging:message:dokkaHtmlPartial/stage">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="unblock-user.html"><span>unblock</span><wbr><span><span>User</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1679499201%2FFunctions%2F1591890667"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":messaging:message:dokkaHtmlPartial/stage"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="unblock-user.html"><span class="token function">unblockUser</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">userId<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Unblocks a previously blocked user in the chat room.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="857742739%2FFunctions%2F1591890667" anchor-label="unmuteChatRoom" id="857742739%2FFunctions%2F1591890667" data-filterable-set=":messaging:message:dokkaHtmlPartial/stage"></a>
+          <div class="table-row" data-filterable-current=":messaging:message:dokkaHtmlPartial/stage" data-filterable-set=":messaging:message:dokkaHtmlPartial/stage">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="unmute-chat-room.html"><span>unmute</span><wbr><span>Chat</span><wbr><span><span>Room</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="857742739%2FFunctions%2F1591890667"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":messaging:message:dokkaHtmlPartial/stage"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="unmute-chat-room.html"><span class="token function">unmuteChatRoom</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Unmutes the chat room.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2055227511%2FFunctions%2F1591890667" anchor-label="unpinMessage" id="2055227511%2FFunctions%2F1591890667" data-filterable-set=":messaging:message:dokkaHtmlPartial/stage"></a>
+          <div class="table-row" data-filterable-current=":messaging:message:dokkaHtmlPartial/stage" data-filterable-set=":messaging:message:dokkaHtmlPartial/stage">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="unpin-message.html"><span>unpin</span><wbr><span><span>Message</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2055227511%2FFunctions%2F1591890667"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":messaging:message:dokkaHtmlPartial/stage"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="unpin-message.html"><span class="token function">unpinMessage</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">messageId<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Unpins a previously pinned message in the chat room.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-166726880%2FFunctions%2F1591890667" anchor-label="updateUser" id="-166726880%2FFunctions%2F1591890667" data-filterable-set=":messaging:message:dokkaHtmlPartial/stage"></a>
+          <div class="table-row" data-filterable-current=":messaging:message:dokkaHtmlPartial/stage" data-filterable-set=":messaging:message:dokkaHtmlPartial/stage">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="update-user.html"><span>update</span><wbr><span><span>User</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-166726880%2FFunctions%2F1591890667"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":messaging:message:dokkaHtmlPartial/stage"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="update-user.html"><span class="token function">updateUser</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">newCustomName<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Updates the current user's information in the chat room.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1325197991%2FFunctions%2F1591890667" anchor-label="updateViewerInfo" id="-1325197991%2FFunctions%2F1591890667" data-filterable-set=":messaging:message:dokkaHtmlPartial/stage"></a>
+          <div class="table-row" data-filterable-current=":messaging:message:dokkaHtmlPartial/stage" data-filterable-set=":messaging:message:dokkaHtmlPartial/stage">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="update-viewer-info.html"><span>update</span><wbr><span>Viewer</span><wbr><span><span>Info</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1325197991%2FFunctions%2F1591890667"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":messaging:message:dokkaHtmlPartial/stage"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="update-viewer-info.html"><span class="token function">updateViewerInfo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">enabled<span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span><span class="token punctuation">, </span></span><span class="parameter ">customName<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Updates viewer information in the chat room.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
