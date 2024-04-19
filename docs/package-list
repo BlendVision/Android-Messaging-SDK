@@ -1,0 +1,9 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+
+module:common
+com.blendvision.chat.messaging.common.presentation
+module:message
+com.blendvision.chat.messaging.message.presentation
+com.blendvision.chat.messaging.message.presentation.callback
+com.blendvision.chat.messaging.message.presentation.state
