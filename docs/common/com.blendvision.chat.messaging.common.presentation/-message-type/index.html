@@ -1,0 +1,370 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>MessageType</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../../index.html">
+                            BlendVisionMessageSDK
+                    </a>            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":messaging:common:dokkaHtmlPartial/stage">androidJvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="common::com.blendvision.chat.messaging.common.presentation/MessageType///PointingToDeclaration//-658039159">
+  <div class="breadcrumbs"><a href="../../index.html">common</a><span class="delimiter">/</span><a href="../index.html">com.blendvision.chat.messaging.common.presentation</a><span class="delimiter">/</span><span class="current">MessageType</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Message</span><wbr><span><span>Type</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":messaging:common:dokkaHtmlPartial/stage"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">MessageType</a></div><h4 class="">Inheritors</h4><div class="table"><div class="table-row" data-filterable-current=":messaging:common:dokkaHtmlPartial/stage" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-t-e-x-t/index.html">INTERACTION_TYPE_TEXT</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":messaging:common:dokkaHtmlPartial/stage" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-m-u-t-e/index.html">INTERACTION_TYPE_MUTE</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":messaging:common:dokkaHtmlPartial/stage" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-u-n-m-u-t-e/index.html">INTERACTION_TYPE_UNMUTE</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":messaging:common:dokkaHtmlPartial/stage" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-p-i-n_-m-e-s-s-a-g-e/index.html">INTERACTION_TYPE_PIN_MESSAGE</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":messaging:common:dokkaHtmlPartial/stage" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-u-n-p-i-n_-m-e-s-s-a-g-e/index.html">INTERACTION_TYPE_UNPIN_MESSAGE</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":messaging:common:dokkaHtmlPartial/stage" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-d-e-l-e-t-e_-m-e-s-s-a-g-e/index.html">INTERACTION_TYPE_DELETE_MESSAGE</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":messaging:common:dokkaHtmlPartial/stage" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-b-l-o-c-k_-u-s-e-r/index.html">INTERACTION_TYPE_BLOCK_USER</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":messaging:common:dokkaHtmlPartial/stage" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-u-n-b-l-o-c-k_-u-s-e-r/index.html">INTERACTION_TYPE_UNBLOCK_USER</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":messaging:common:dokkaHtmlPartial/stage" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-p-o-l-l_-s-t-a-r-t-e-d/index.html">INTERACTION_TYPE_POLL_STARTED</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":messaging:common:dokkaHtmlPartial/stage" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-p-o-l-l_-c-l-o-s-e-d/index.html">INTERACTION_TYPE_POLL_CLOSED</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":messaging:common:dokkaHtmlPartial/stage" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-p-o-l-l_-a-r-c-h-i-v-e-d/index.html">INTERACTION_TYPE_POLL_ARCHIVED</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":messaging:common:dokkaHtmlPartial/stage" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-p-o-l-l_-u-p-d-a-t-e/index.html">INTERACTION_TYPE_POLL_UPDATE</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":messaging:common:dokkaHtmlPartial/stage" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-p-o-l-l_-u-s-e-r_-v-o-t-e/index.html">INTERACTION_TYPE_POLL_USER_VOTE</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":messaging:common:dokkaHtmlPartial/stage" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-s-t-i-c-k-e-r/index.html">INTERACTION_TYPE_STICKER</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":messaging:common:dokkaHtmlPartial/stage" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-v-i-e-w-e-r_-i-n-f-o_-e-n-a-b-l-e-d/index.html">INTERACTION_TYPE_VIEWER_INFO_ENABLED</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":messaging:common:dokkaHtmlPartial/stage" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-v-i-e-w-e-r_-i-n-f-o_-d-i-s-a-b-l-e-d/index.html">INTERACTION_TYPE_VIEWER_INFO_DISABLED</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":messaging:common:dokkaHtmlPartial/stage" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-v-i-e-w-e-r_-i-n-f-o_-u-p-d-a-t-e/index.html">INTERACTION_TYPE_VIEWER_INFO_UPDATE</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":messaging:common:dokkaHtmlPartial/stage" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-c-u-s-t-o-m/index.html">INTERACTION_TYPE_CUSTOM</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":messaging:common:dokkaHtmlPartial/stage" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-e-n-t-r-a-n-c-e/index.html">INTERACTION_TYPE_ENTRANCE</a></div></span></div><div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="599455449%2FClasslikes%2F-658039159" anchor-label="INTERACTION_TYPE_BLOCK_USER" id="599455449%2FClasslikes%2F-658039159" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage"></a>
+          <div class="table-row" data-filterable-current=":messaging:common:dokkaHtmlPartial/stage" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-b-l-o-c-k_-u-s-e-r/index.html"><span><span>INTERACTION_TYPE_BLOCK_USER</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="599455449%2FClasslikes%2F-658039159"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":messaging:common:dokkaHtmlPartial/stage"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">object </span><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-b-l-o-c-k_-u-s-e-r/index.html">INTERACTION_TYPE_BLOCK_USER</a> : <a href="index.html">MessageType</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1366369083%2FClasslikes%2F-658039159" anchor-label="INTERACTION_TYPE_CUSTOM" id="-1366369083%2FClasslikes%2F-658039159" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage"></a>
+          <div class="table-row" data-filterable-current=":messaging:common:dokkaHtmlPartial/stage" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-c-u-s-t-o-m/index.html"><span><span>INTERACTION_TYPE_CUSTOM</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1366369083%2FClasslikes%2F-658039159"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":messaging:common:dokkaHtmlPartial/stage"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">object </span><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-c-u-s-t-o-m/index.html">INTERACTION_TYPE_CUSTOM</a> : <a href="index.html">MessageType</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="995579939%2FClasslikes%2F-658039159" anchor-label="INTERACTION_TYPE_DELETE_MESSAGE" id="995579939%2FClasslikes%2F-658039159" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage"></a>
+          <div class="table-row" data-filterable-current=":messaging:common:dokkaHtmlPartial/stage" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-d-e-l-e-t-e_-m-e-s-s-a-g-e/index.html"><span><span>INTERACTION_TYPE_DELETE_MESSAGE</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="995579939%2FClasslikes%2F-658039159"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":messaging:common:dokkaHtmlPartial/stage"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">object </span><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-d-e-l-e-t-e_-m-e-s-s-a-g-e/index.html">INTERACTION_TYPE_DELETE_MESSAGE</a> : <a href="index.html">MessageType</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1682832416%2FClasslikes%2F-658039159" anchor-label="INTERACTION_TYPE_ENTRANCE" id="-1682832416%2FClasslikes%2F-658039159" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage"></a>
+          <div class="table-row" data-filterable-current=":messaging:common:dokkaHtmlPartial/stage" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-e-n-t-r-a-n-c-e/index.html"><span><span>INTERACTION_TYPE_ENTRANCE</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1682832416%2FClasslikes%2F-658039159"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":messaging:common:dokkaHtmlPartial/stage"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">object </span><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-e-n-t-r-a-n-c-e/index.html">INTERACTION_TYPE_ENTRANCE</a> : <a href="index.html">MessageType</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1128541091%2FClasslikes%2F-658039159" anchor-label="INTERACTION_TYPE_MUTE" id="-1128541091%2FClasslikes%2F-658039159" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage"></a>
+          <div class="table-row" data-filterable-current=":messaging:common:dokkaHtmlPartial/stage" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-m-u-t-e/index.html"><span><span>INTERACTION_TYPE_MUTE</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1128541091%2FClasslikes%2F-658039159"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":messaging:common:dokkaHtmlPartial/stage"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">object </span><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-m-u-t-e/index.html">INTERACTION_TYPE_MUTE</a> : <a href="index.html">MessageType</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1556598767%2FClasslikes%2F-658039159" anchor-label="INTERACTION_TYPE_PIN_MESSAGE" id="1556598767%2FClasslikes%2F-658039159" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage"></a>
+          <div class="table-row" data-filterable-current=":messaging:common:dokkaHtmlPartial/stage" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-p-i-n_-m-e-s-s-a-g-e/index.html"><span><span>INTERACTION_TYPE_PIN_MESSAGE</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1556598767%2FClasslikes%2F-658039159"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":messaging:common:dokkaHtmlPartial/stage"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">object </span><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-p-i-n_-m-e-s-s-a-g-e/index.html">INTERACTION_TYPE_PIN_MESSAGE</a> : <a href="index.html">MessageType</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-895989878%2FClasslikes%2F-658039159" anchor-label="INTERACTION_TYPE_POLL_ARCHIVED" id="-895989878%2FClasslikes%2F-658039159" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage"></a>
+          <div class="table-row" data-filterable-current=":messaging:common:dokkaHtmlPartial/stage" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-p-o-l-l_-a-r-c-h-i-v-e-d/index.html"><span><span>INTERACTION_TYPE_POLL_ARCHIVED</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-895989878%2FClasslikes%2F-658039159"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":messaging:common:dokkaHtmlPartial/stage"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">object </span><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-p-o-l-l_-a-r-c-h-i-v-e-d/index.html">INTERACTION_TYPE_POLL_ARCHIVED</a> : <a href="index.html">MessageType</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="778800128%2FClasslikes%2F-658039159" anchor-label="INTERACTION_TYPE_POLL_CLOSED" id="778800128%2FClasslikes%2F-658039159" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage"></a>
+          <div class="table-row" data-filterable-current=":messaging:common:dokkaHtmlPartial/stage" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-p-o-l-l_-c-l-o-s-e-d/index.html"><span><span>INTERACTION_TYPE_POLL_CLOSED</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="778800128%2FClasslikes%2F-658039159"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":messaging:common:dokkaHtmlPartial/stage"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">object </span><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-p-o-l-l_-c-l-o-s-e-d/index.html">INTERACTION_TYPE_POLL_CLOSED</a> : <a href="index.html">MessageType</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1872533867%2FClasslikes%2F-658039159" anchor-label="INTERACTION_TYPE_POLL_STARTED" id="-1872533867%2FClasslikes%2F-658039159" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage"></a>
+          <div class="table-row" data-filterable-current=":messaging:common:dokkaHtmlPartial/stage" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-p-o-l-l_-s-t-a-r-t-e-d/index.html"><span><span>INTERACTION_TYPE_POLL_STARTED</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1872533867%2FClasslikes%2F-658039159"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":messaging:common:dokkaHtmlPartial/stage"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">object </span><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-p-o-l-l_-s-t-a-r-t-e-d/index.html">INTERACTION_TYPE_POLL_STARTED</a> : <a href="index.html">MessageType</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1374963523%2FClasslikes%2F-658039159" anchor-label="INTERACTION_TYPE_POLL_UPDATE" id="1374963523%2FClasslikes%2F-658039159" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage"></a>
+          <div class="table-row" data-filterable-current=":messaging:common:dokkaHtmlPartial/stage" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-p-o-l-l_-u-p-d-a-t-e/index.html"><span><span>INTERACTION_TYPE_POLL_UPDATE</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1374963523%2FClasslikes%2F-658039159"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":messaging:common:dokkaHtmlPartial/stage"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">object </span><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-p-o-l-l_-u-p-d-a-t-e/index.html">INTERACTION_TYPE_POLL_UPDATE</a> : <a href="index.html">MessageType</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1617653112%2FClasslikes%2F-658039159" anchor-label="INTERACTION_TYPE_POLL_USER_VOTE" id="1617653112%2FClasslikes%2F-658039159" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage"></a>
+          <div class="table-row" data-filterable-current=":messaging:common:dokkaHtmlPartial/stage" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-p-o-l-l_-u-s-e-r_-v-o-t-e/index.html"><span><span>INTERACTION_TYPE_POLL_USER_VOTE</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1617653112%2FClasslikes%2F-658039159"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":messaging:common:dokkaHtmlPartial/stage"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">object </span><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-p-o-l-l_-u-s-e-r_-v-o-t-e/index.html">INTERACTION_TYPE_POLL_USER_VOTE</a> : <a href="index.html">MessageType</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-55250065%2FClasslikes%2F-658039159" anchor-label="INTERACTION_TYPE_STICKER" id="-55250065%2FClasslikes%2F-658039159" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage"></a>
+          <div class="table-row" data-filterable-current=":messaging:common:dokkaHtmlPartial/stage" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-s-t-i-c-k-e-r/index.html"><span><span>INTERACTION_TYPE_STICKER</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-55250065%2FClasslikes%2F-658039159"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":messaging:common:dokkaHtmlPartial/stage"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">object </span><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-s-t-i-c-k-e-r/index.html">INTERACTION_TYPE_STICKER</a> : <a href="index.html">MessageType</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-774193207%2FClasslikes%2F-658039159" anchor-label="INTERACTION_TYPE_TEXT" id="-774193207%2FClasslikes%2F-658039159" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage"></a>
+          <div class="table-row" data-filterable-current=":messaging:common:dokkaHtmlPartial/stage" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-t-e-x-t/index.html"><span><span>INTERACTION_TYPE_TEXT</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-774193207%2FClasslikes%2F-658039159"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":messaging:common:dokkaHtmlPartial/stage"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">object </span><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-t-e-x-t/index.html">INTERACTION_TYPE_TEXT</a> : <a href="index.html">MessageType</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="377641056%2FClasslikes%2F-658039159" anchor-label="INTERACTION_TYPE_UNBLOCK_USER" id="377641056%2FClasslikes%2F-658039159" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage"></a>
+          <div class="table-row" data-filterable-current=":messaging:common:dokkaHtmlPartial/stage" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-u-n-b-l-o-c-k_-u-s-e-r/index.html"><span><span>INTERACTION_TYPE_UNBLOCK_USER</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="377641056%2FClasslikes%2F-658039159"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":messaging:common:dokkaHtmlPartial/stage"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">object </span><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-u-n-b-l-o-c-k_-u-s-e-r/index.html">INTERACTION_TYPE_UNBLOCK_USER</a> : <a href="index.html">MessageType</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="720414500%2FClasslikes%2F-658039159" anchor-label="INTERACTION_TYPE_UNMUTE" id="720414500%2FClasslikes%2F-658039159" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage"></a>
+          <div class="table-row" data-filterable-current=":messaging:common:dokkaHtmlPartial/stage" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-u-n-m-u-t-e/index.html"><span><span>INTERACTION_TYPE_UNMUTE</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="720414500%2FClasslikes%2F-658039159"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":messaging:common:dokkaHtmlPartial/stage"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">object </span><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-u-n-m-u-t-e/index.html">INTERACTION_TYPE_UNMUTE</a> : <a href="index.html">MessageType</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1024680120%2FClasslikes%2F-658039159" anchor-label="INTERACTION_TYPE_UNPIN_MESSAGE" id="-1024680120%2FClasslikes%2F-658039159" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage"></a>
+          <div class="table-row" data-filterable-current=":messaging:common:dokkaHtmlPartial/stage" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-u-n-p-i-n_-m-e-s-s-a-g-e/index.html"><span><span>INTERACTION_TYPE_UNPIN_MESSAGE</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1024680120%2FClasslikes%2F-658039159"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":messaging:common:dokkaHtmlPartial/stage"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">object </span><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-u-n-p-i-n_-m-e-s-s-a-g-e/index.html">INTERACTION_TYPE_UNPIN_MESSAGE</a> : <a href="index.html">MessageType</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2053993174%2FClasslikes%2F-658039159" anchor-label="INTERACTION_TYPE_VIEWER_INFO_DISABLED" id="2053993174%2FClasslikes%2F-658039159" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage"></a>
+          <div class="table-row" data-filterable-current=":messaging:common:dokkaHtmlPartial/stage" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-v-i-e-w-e-r_-i-n-f-o_-d-i-s-a-b-l-e-d/index.html"><span><span>INTERACTION_TYPE_VIEWER_INFO_DISABLED</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2053993174%2FClasslikes%2F-658039159"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":messaging:common:dokkaHtmlPartial/stage"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">object </span><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-v-i-e-w-e-r_-i-n-f-o_-d-i-s-a-b-l-e-d/index.html">INTERACTION_TYPE_VIEWER_INFO_DISABLED</a> : <a href="index.html">MessageType</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1340368273%2FClasslikes%2F-658039159" anchor-label="INTERACTION_TYPE_VIEWER_INFO_ENABLED" id="-1340368273%2FClasslikes%2F-658039159" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage"></a>
+          <div class="table-row" data-filterable-current=":messaging:common:dokkaHtmlPartial/stage" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-v-i-e-w-e-r_-i-n-f-o_-e-n-a-b-l-e-d/index.html"><span><span>INTERACTION_TYPE_VIEWER_INFO_ENABLED</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1340368273%2FClasslikes%2F-658039159"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":messaging:common:dokkaHtmlPartial/stage"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">object </span><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-v-i-e-w-e-r_-i-n-f-o_-e-n-a-b-l-e-d/index.html">INTERACTION_TYPE_VIEWER_INFO_ENABLED</a> : <a href="index.html">MessageType</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-818338455%2FClasslikes%2F-658039159" anchor-label="INTERACTION_TYPE_VIEWER_INFO_UPDATE" id="-818338455%2FClasslikes%2F-658039159" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage"></a>
+          <div class="table-row" data-filterable-current=":messaging:common:dokkaHtmlPartial/stage" data-filterable-set=":messaging:common:dokkaHtmlPartial/stage">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-v-i-e-w-e-r_-i-n-f-o_-u-p-d-a-t-e/index.html"><span><span>INTERACTION_TYPE_VIEWER_INFO_UPDATE</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-818338455%2FClasslikes%2F-658039159"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":messaging:common:dokkaHtmlPartial/stage"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">object </span><a href="-i-n-t-e-r-a-c-t-i-o-n_-t-y-p-e_-v-i-e-w-e-r_-i-n-f-o_-u-p-d-a-t-e/index.html">INTERACTION_TYPE_VIEWER_INFO_UPDATE</a> : <a href="index.html">MessageType</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
