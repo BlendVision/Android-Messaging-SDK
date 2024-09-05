@@ -3,6 +3,7 @@ $dokka.linkExtension:html
 
 module:common
 com.blendvision.chat.messaging.common.presentation
+com.blendvision.chat.messaging.common.utils
 module:message
 com.blendvision.chat.messaging.message.presentation
 com.blendvision.chat.messaging.message.presentation.callback
